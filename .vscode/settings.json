@@ -1,8 +1,0 @@
-{
-    "java.dependency.packagePresentation": "hierarchical",
-    "workbench.colorCustomizations": {
-    "terminal.foreground": "#ffffff",
-    "terminal.background": "#381602",
-    "terminal.selectionBackground": "#ffffff",
-    }
-}
