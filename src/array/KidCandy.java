@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
-class Solution {
+class KidCandy {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         List<Boolean> result = new ArrayList<Boolean>();
         // int maxCandy = Collection.max(Arrays.asList(candies));
