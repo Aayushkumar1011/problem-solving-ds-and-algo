@@ -25,17 +25,26 @@ public class MaximumWealth {
 // another efficient solution
 class Solution {
     public int maximumWealth(int[][] accounts) {
-        int[] result = new int[accounts.length];
         int max = Integer.MIN_VALUE, sum;
         for (int i = 0; i < accounts.length; i++) {
             sum = 0;
             for (int j = 0; j < accounts[i].length; j++) {
                 sum += accounts[i][j];
             }
-            result[i] = sum;
             max = Math.max(max, sum);
         }
         return max;
     }
+}
+
+public int maximumWealth(int[][] accounts) {
+	int max = 0;
+	for (int[] customer : accounts) {
+		int wealth = 0;
+		for (int account : customer)
+			wealth += account;
+		max = Math.max(max, wealth);
+	}
+	return max;
 }
 */
