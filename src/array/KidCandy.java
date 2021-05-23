@@ -6,7 +6,7 @@ class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         List<Boolean> result = new ArrayList<Boolean>();
         // int maxCandy = Collection.max(Arrays.asList(candies));
-         int maxCandy = getMax(candies);
+        int maxCandy = getMax(candies);
         for (int candy : candies) {
             int newMaxCandy = candy + extraCandies;
             if (newMaxCandy >= maxCandy)
@@ -16,11 +16,11 @@ class Solution {
         }
         return result;
     }
-    
-    public int getMax(int[] candies){
+
+    public int getMax(int[] candies) {
         int max = candies[0];
-        for(int i = 1; i< candies.length; i++){
-            if(max < candies[i]){
+        for (int i = 1; i < candies.length; i++) {
+            if (max < candies[i]) {
                 max = candies[i];
             }
         }
