@@ -21,3 +21,21 @@ public class MaximumWealth {
         return max;
     }
 }
+/**
+// another efficient solution
+class Solution {
+    public int maximumWealth(int[][] accounts) {
+        int[] result = new int[accounts.length];
+        int max = Integer.MIN_VALUE, sum;
+        for (int i = 0; i < accounts.length; i++) {
+            sum = 0;
+            for (int j = 0; j < accounts[i].length; j++) {
+                sum += accounts[i][j];
+            }
+            result[i] = sum;
+            max = Math.max(max, sum);
+        }
+        return max;
+    }
+}
+*/
