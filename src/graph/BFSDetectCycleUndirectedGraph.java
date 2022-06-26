@@ -3,7 +3,7 @@
   https://www.interviewbit.com/problems/cycle-in-undirected-graph/
 */
 
-public class DetectCycleUndirectedGraph {
+public class BFSDetectCycleUndirectedGraph {
     class PairVertex{
         int first;
         int second;
